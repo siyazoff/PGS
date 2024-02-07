@@ -1,0 +1,82 @@
+html
+    font-size: 62.5%
+
+body
+    font-family: "PP Right Grotesk"
+    background-color: $color-main
+    
+.title-biggest
+    color: $color-white
+    font-size: 9.6rem
+    font-weight: 800
+    line-height: 9.6rem
+    text-transform: uppercase
+    letter-spacing: -.04rem
+
+.main-heading
+    display: flex
+    align-items: start
+
+    span
+        font-size: 1.6rem
+        font-style: normal
+        font-weight: 200
+        line-height: 2.2rem
+        letter-spacing: 0.08rem
+        text-transform: uppercase
+        color: $color-main
+
+.secondary-heading
+    text-transform: uppercase
+    display: flex
+    h2
+        color: $color-black
+        font-size: 3.2rem
+        font-weight: 500
+        line-height: 4rem
+    span
+        display: inline-block
+        margin-right: 32.5rem
+        font-size: 1.6rem
+        line-height: 2.2rem
+        letter-spacing: 0.08rem
+        color: $color-main
+    &_bolder
+        h2
+            font-weight: 800
+
+.paragraph
+    color: $color-paragraph
+    font-size: 1.6rem
+    font-weight: 200
+    line-height: 2.2rem
+    &_20
+        color: $color-white
+        font-size: 2rem
+        font-weight: 200
+        line-height: 2.4rem
+
+
+@media all and ( max-width: 768px )
+    .title-biggest
+        font-size: 4rem
+        line-height: 4rem
+
+    .main-heading
+        flex-direction: column
+        gap: .8rem
+
+    .secondary-heading
+        flex-direction: column
+        h2
+            font-size: 2rem
+            line-height: 2.8rem
+        span
+            margin-right: 0
+            margin-bottom: .8rem
+            font-size: 1.2rem
+            line-height: 1.2rem
+            letter-spacing: 0.06rem
+    .paragraph
+        &_20
+            font-size: 1.6rem
