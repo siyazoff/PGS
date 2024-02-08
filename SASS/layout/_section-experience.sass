@@ -1,0 +1,90 @@
+.section-experience
+    position: relative
+    background-color: $color-white
+    padding: 7rem 0
+
+    &__heading
+        gap: 47.4rem
+        h2
+            color: $color-black
+            font-size: 32px
+            line-height: 40px
+
+    &__box
+        margin-top: 3.6rem
+
+    &__swiper
+        height: 100%
+        width: 100%
+        overflow: hidden
+    &__item
+        display: flex
+        flex-direction: column
+        gap: 1.6rem
+
+        img
+            height: 14rem
+            width: 100%
+            object-fit: cover
+
+        h5
+            color: $color-black
+            font-size: 2rem
+            font-weight: 200
+            line-height: 2rem
+            text-transform: uppercase
+    &__btns
+        display: flex
+        justify-content: center
+        gap: 2rem
+        margin-top: 1.6rem
+
+    [class^="experience-swiper"]
+        &:last-child
+            transform: rotate(180deg)
+
+        svg
+            transition: transform .3s ease-in-out
+            circle
+                transition: fill .3s ease-in-out
+            path
+                transition: stroke .3s ease-in-out
+            &:hover
+                transform: scale(1.3)
+                circle
+                    fill: $color-white
+                path
+                    stroke: $color-main
+
+.section-img
+    position: relative
+    height: 46rem
+    overflow: hidden
+    .main-img
+        width: 100%
+        height: 100%
+        object-fit: cover
+        object-position: 0% 100%
+
+@media all and (max-width: 768px)
+    .section-experience
+        padding: 5rem 0
+
+        &__heading
+            gap: .8rem
+
+        &__box
+            margin-top: 2rem
+
+        &__item
+
+            img
+                height: 20rem
+
+        &__btns
+            display: flex
+            justify-content: center
+            gap: 1rem
+            margin-top: 2.8rem
+    .section-img
+        height: 29rem

@@ -28,7 +28,6 @@ body
 
 .secondary-heading
     text-transform: uppercase
-    display: flex
     h2
         color: $color-black
         font-size: 3.2rem
@@ -41,6 +40,7 @@ body
         line-height: 2.2rem
         letter-spacing: 0.08rem
         color: $color-main
+        transform: translateY(-6px)
     &_bolder
         h2
             font-weight: 800
@@ -67,8 +67,9 @@ body
         gap: .8rem
 
     .secondary-heading
-        flex-direction: column
         h2
+            display: flex
+            flex-direction: column
             font-size: 2rem
             line-height: 2.8rem
         span
@@ -77,6 +78,7 @@ body
             font-size: 1.2rem
             line-height: 1.2rem
             letter-spacing: 0.06rem
+            transform: translateY(0)
     .paragraph
         &_20
             font-size: 1.6rem

@@ -1,0 +1,135 @@
+.section-goals
+    position: relative
+    background-color: $color-white
+    padding: 7rem 0 14rem
+
+    .container
+        overflow: hidden
+        
+
+    &__heading
+        span
+            margin-right: 20rem
+
+    &__box
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
+        column-gap: 2.4rem
+        margin-top: 3.6rem
+        margin-bottom: 4.4rem
+
+        p
+            letter-spacing: -1px
+
+
+    &__swiper
+        height: 100%
+        width: 100%
+        overflow: visible
+        max-width: 39.6rem
+        height: 46rem
+        position: relative
+
+        .swiper-slide
+            transition: width .6s ease-in-out, height .3s ease-in-out
+
+            &-active, &-prev
+                height: 26rem
+                width: 39.6rem !important  
+
+            img
+                width: 100%
+                height: 100%
+                object-fit: cover
+
+            &-next
+                width: 82rem !important
+                height: 46rem
+                    
+    &__pagination
+        color: #F7F7F7
+        font-size: 12.8rem
+        font-weight: 200
+        line-height: 12.8rem
+        text-transform: uppercase
+        position: absolute
+        bottom: 0
+        left: 0
+        z-index: 10
+
+    &__btns
+        display: flex
+        gap: 1.6rem
+        margin-top: 1.6rem
+        .swiper-goals-prev
+            margin-left: auto
+        .swiper-goals-next
+            margin-right: 36.6rem
+            svg
+                transform: rotate(180deg)
+        svg
+            circle
+                transition: fill .3s ease-in-out
+            path
+                transition: stroke .3s ease-in-out
+            &:hover
+                circle
+                    fill: $color-white
+                path
+                    stroke: $color-main
+
+@media all and (max-width: 768px)
+    .section-goals
+        padding: 5rem 0 10rem
+
+        .container
+            overflow: hidden
+            
+
+        &__heading
+            span
+                margin-right: 0
+
+        &__box
+            grid-template-columns: repeat(1, 1fr)
+            column-gap: 0
+            row-gap: 1.2rem
+            margin-top: 2.2rem
+            margin-bottom: 10rem
+
+
+        &__swiper
+            height: 100%
+            width: 100%
+            overflow: hidden
+            max-width: 100%
+            height: 30rem
+            position: relative
+
+            .swiper-wrapper
+                align-items: end
+
+            .swiper-slide
+                transition: all .3s
+                height: 24rem
+
+                &-active, &-prev
+                    height: 24rem
+                    width: 100% !important
+
+                &-next
+                    width: 100% !important
+                    height: 24rem
+                        
+        &__pagination
+            font-size: 6.4rem
+            line-height: 4rem
+            bottom: unset
+            top: 0
+
+        &__btns
+            margin-top: 3.2rem
+            .swiper-goals-prev
+                margin-left: auto
+            .swiper-goals-next
+                margin-right: auto

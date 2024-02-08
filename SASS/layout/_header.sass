@@ -1,6 +1,6 @@
 
 .header 
-    position: fixed
+    position: absolute
     top: 3.2rem
     left: 0
     width: 100%
@@ -45,8 +45,6 @@
             flex-grow: 1
             z-index: 999
 
-
-
         &__nav
             display: none
         &__btn
@@ -66,3 +64,9 @@
                 background-color: $color-white
                 &:nth-child(2n)
                     width: 2.4rem
+                    transition: transform .3s ease-in-out
+
+            &.is-active
+                span
+                    &:nth-child(2n)
+                        transform: translateX(-1.2rem)

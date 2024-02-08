@@ -1,0 +1,141 @@
+.footer
+    position: relative
+    padding: 8rem 0 3rem
+    background-color: $color-main
+
+    &__box
+        display: grid
+        grid-template-columns: repeat(4, 1fr)
+
+    &__nav
+        display: flex
+        flex-direction: column
+        gap: 3.6rem
+        a
+            color: $color-white
+            font-size: 1.6rem
+            font-weight: 200
+            line-height: normal
+            text-transform: uppercase
+            transition: color .3s ease-in-out
+
+            &:hover
+                color: #70A6DB
+            
+    &__logo
+        margin-bottom: .4rem
+
+    &__info
+        display: flex
+        flex-direction: column
+        gap: 3.2rem
+        margin-right: 8.1rem
+
+        h3
+            color: $color-white
+            font-size: 1.8rem
+            font-style: normal
+            font-weight: 800
+            line-height: 2rem
+            text-transform: uppercase
+            letter-spacing: .1rem
+            margin-bottom: 1.6rem
+        p,a
+            display: inline-block
+            color: $color-white
+            font-size: 1.8rem
+            font-style: normal
+            font-weight: 200
+            line-height: 2rem
+            letter-spacing: -.1rem
+        a
+            transition: color .3s ease-in-out
+            &:hover
+                color: #70A6DB
+
+        &_social
+            display: flex
+            gap: 2rem
+            margin-top: .4rem
+            a
+                width: 5.2rem
+                height: 5.2rem
+                display: flex
+                align-items: center
+                justify-content: center
+                border-radius: 50%
+                background-color: #70A6DB
+                transition: transform .3s ease-in-out
+                path
+                    transition: fill .3s ease-in-out
+
+                &:hover
+                    transform: scale(1.2)
+                    path
+                        fill: $color-main
+
+    &__map
+        grid-column: span 2
+
+    hr
+        opacity: 1
+        color: $color-white
+        margin: 4rem 0 2.8rem
+
+    &__copyright
+        display: flex
+        justify-content: space-between
+
+        p,a
+            color: #EBEBEB
+            font-size: 1.6rem
+            font-weight: 200
+            line-height: 1rem
+            letter-spacing: 0.8px
+            display: inline-block
+
+
+@media all and (max-width: 768px)
+    .footer
+        padding: 6rem 0 2rem
+
+        &__box
+            display: grid
+            grid-template-columns: repeat(2, 1fr)
+
+        &__info
+            gap: 2.4rem
+            margin-right: 0
+
+            h3
+                font-size: 1.6rem
+                line-height: 1.6rem
+                margin-bottom: 1.2rem
+            p,a
+                font-size: 1.6rem
+
+            &_social
+                margin-top: 0
+                a
+                    width: 4.8rem
+                    height: 4.8rem
+
+        &__map
+            grid-column: span 2
+            margin-top: 2.8rem
+
+            iframe
+                width: 100%
+                height: 19rem
+
+        hr
+            margin: 2rem 0 1.6rem
+
+        &__copyright
+            display: flex
+            justify-content: space-between
+
+            p,a
+                font-size: 1.2rem
+
+
