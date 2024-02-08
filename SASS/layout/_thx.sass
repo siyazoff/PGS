@@ -1,0 +1,47 @@
+.section-thx
+    position: relative
+    height: 100vh
+    background-color: $color-white
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: column
+    gap: 3.6rem
+
+    h1
+        color: $color-main
+        font-size: 12.8rem
+        font-weight: 800
+        line-height: 12.8rem
+        text-transform: uppercase
+
+    h2
+        color: #454545
+        text-align: center
+        font-size: 2rem
+        font-weight: 200
+        line-height: 2.4rem
+
+    &__btn
+        &:link, &:visited
+            border: .1rem solid $color-main
+            color: $color-black
+            text-transform: uppercase
+
+
+@media all and (max-width: 768px)
+    .section-thx
+        h1
+            font-size: 8.8rem
+            line-height: 8.8rem
+
+        h2
+            font-size: 1.6rem
+            line-height: 2.4rem
+
+        &__btn
+            &:link, &:visited
+                border: .1rem solid $color-main
+                color: $color-black
+                text-transform: uppercase
+                display: inline-block

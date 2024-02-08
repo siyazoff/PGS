@@ -318,6 +318,19 @@ main {
 .header__burger {
   display: none;
 }
+.header_secondary path {
+  fill: #37509A;
+}
+.header_secondary a {
+  color: #454545;
+}
+.header_secondary .header__btn {
+  border: 0.1rem solid #454545;
+  color: #454545;
+}
+.header_secondary .header__burger {
+  display: none;
+}
 
 @media all and (max-width: 919px) {
   .header {
@@ -1189,4 +1202,66 @@ main {
   .footer__copyright p, .footer__copyright a {
     font-size: 1.2rem;
   }
+}
+.section-thx {
+  position: relative;
+  height: 100vh;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 3.6rem;
+}
+.section-thx h1 {
+  color: #37509A;
+  font-size: 12.8rem;
+  font-weight: 800;
+  line-height: 12.8rem;
+  text-transform: uppercase;
+}
+.section-thx h2 {
+  color: #454545;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 200;
+  line-height: 2.4rem;
+}
+.section-thx__btn:link, .section-thx__btn:visited {
+  border: 0.1rem solid #37509A;
+  color: #121212;
+  text-transform: uppercase;
+}
+
+@media all and (max-width: 768px) {
+  .section-thx h1 {
+    font-size: 8.8rem;
+    line-height: 8.8rem;
+  }
+  .section-thx h2 {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+  .section-thx__btn:link, .section-thx__btn:visited {
+    border: 0.1rem solid #37509A;
+    color: #121212;
+    text-transform: uppercase;
+    display: inline-block;
+  }
+}
+.section-not h1 {
+  font-size: 20.8rem;
+  line-height: 20.8rem;
+}
+.section-not img {
+  position: relative;
+  left: -12.4rem;
+}
+
+.section-not h1 {
+  font-size: 14.8rem;
+  line-height: 14.8rem;
+}
+.section-not img {
+  left: -1rem;
 }/*# sourceMappingURL=style.css.map */

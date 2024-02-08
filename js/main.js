@@ -31,4 +31,14 @@ document.addEventListener("DOMContentLoaded", () => {
       );
     });
   });
+
+  const thxSection = document.querySelector(".section-thx");
+  const notSection = document.querySelector(".section-not");
+  const header = document.querySelector(".header");
+
+  if (thxSection || notSection) {
+    if (header) {
+      header.classList.add("header_secondary");
+    }
+  }
 });
