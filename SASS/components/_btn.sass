@@ -17,7 +17,33 @@
         transform: translateY(-.2rem)
         box-shadow: $box-shadow
 
-        
+.modal-consult-btn
+    position: fixed
+    z-index: 100
+    bottom: 30px
+    left: 50px
+    width: 180px
+    height: 180px
+    border: 1px solid $color-main
+    background: $color-main
+    color: $color-white
+    border-radius: 50%
+    display: flex
+    justify-content: center
+    align-items: center
+    text-align: center
+    font-size: 20px
+    font-weight: 200
+    text-transform: uppercase
+    line-height: 120%
+    transition: transform .2s ease-in-out
+    user-select: none
+
+    &:hover
+        transform: scale(1.1)
+
+    &:active
+        transform: scale(1)
 
 @media all and ( max-width: 768px )
     .btn
@@ -26,3 +52,19 @@
             font-size: 2.4rem
             line-height: normal
     
+    .modal-consult-btn
+        bottom: 20px
+        left: 50%
+        transform: translateX(-50%)
+        width: fit-content
+        height: 41px
+        border-radius: 50px
+        text-align: center
+        font-size: 14px
+        padding-inline: 10px 
+
+        &:hover
+            transform: translateX(-50%) scale(1.1)
+
+        &:active
+            transform: translateX(-50%) scale(1)

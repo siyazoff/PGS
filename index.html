@@ -112,6 +112,14 @@
     </header>
     <!-- ! header ends -->
     <main>
+      <a
+        href="#"
+        class="modal-consult-btn"
+        data-bs-toggle="modal"
+        data-bs-target="#consultModal"
+      >
+        Получить консультацию
+      </a>
       <section class="section-home" id="section-home">
         <div class="swiper-home section-home__swiper">
           <div class="swiper-wrapper">
@@ -830,6 +838,32 @@
                 сообществ.
               </p>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="consultModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-consult__dialog">
+        <div class="modal-content modal-consult__content">
+          <div class="modal-body modal-consult">
+            <h2>Получить консультацию</h2>
+            <h3>
+              Оставьте заявку на консультацию, наш менеджер свяжется с вами в
+              ближайшее время
+            </h3>
+            <form>
+              <input type="text" placeholder="Имя" />
+              <input type="tel" placeholder="Телефон" />
+              <input type="email" placeholder="Почта" />
+              <input type="submit" value="Отрправить" />
+            </form>
           </div>
         </div>
       </div>

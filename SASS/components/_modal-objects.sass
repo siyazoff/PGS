@@ -26,6 +26,60 @@
     &__dialog
         max-width: 110rem
 
+.modal-consult
+    padding: 32px
+    &__content
+        border: none
+        border-radius: 0
+
+    h2
+        color: #121212
+        font-size: 32px
+        font-style: normal
+        font-weight: 500
+        line-height: 40px
+        text-transform: uppercase
+
+    h3
+        color: #454545
+        font-size: 16px
+        font-weight: 200
+        line-height: 22px
+        margin-bottom: 24px
+
+    form
+        display: flex
+        flex-direction: column
+        gap: 16px
+
+    input
+        background: transparent
+        border: none
+        border-bottom: 1px solid #70A6DB
+        font-size: 16px
+        font-weight: 200
+        line-height: 22px
+        padding-bottom: 4px
+        outline: none
+
+        &[type="submit"]
+            margin-top: 24px
+            background: $color-main
+            border-radius: 130px
+            color: $color-white
+            text-align: center
+            font-size: 24px
+            font-weight: 700
+            letter-spacing: .5px
+            text-transform: uppercase
+            padding: 14px
+            transition: transform .2s ease-in-out
+
+            &:hover
+                transform: scale(1.05)
+            &:active
+                transform: scale(1)
+
 
 @media all and ( max-width: 768px )
     .modal-objects
@@ -45,3 +99,26 @@
 
         &__dialog
             margin: 3rem
+
+
+    .modal-consult
+        padding: 16px
+
+        &__dialog
+            padding: 10px
+
+        h2
+            font-size: 20px
+            line-height: 20px
+
+        h3
+            font-size: 16px
+            line-height: 20px
+            margin-bottom: 16px
+
+        input
+            line-height: 20px
+
+            &[type="submit"]
+                margin-top: 16px
+                font-size: 20px
